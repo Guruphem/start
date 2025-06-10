@@ -1,6 +1,30 @@
-const menuBtn = document.querySelector(".menu");
+const menuBtn = document.querySelector(".menu-toggle-icon");
 const navlinks = document.querySelector(".navlinks");
+const copyright = document.querySelector(".copyright-year");
+const bodyElementTag = document.body;
+const mainElementTag = document.querySelector("main");
 
-menuBtn.addEventListener("click", () => {
-    navlinks.classList.toggle("active");
-});
+function menuAndLinkToggle(toggleElement, affectedElement) {
+  toggleElement.addEventListener("click", () => {
+    if (!affectedElement.classList.contains("active")) {
+      affectedElement.classList.add("active");
+      menuBtn.src = "icons/close-svgrepo-new.svg";
+    } else {
+      affectedElement.classList.remove("active");
+      menuBtn.src = "icons/menu (2).svg";
+    }
+    bodyElementTag.classList.toggle("no-scroll");
+  });
+}
+menuAndLinkToggle(menuBtn, navlinks);
+menuAndLinkToggle(mainElementTag, navlinks);
+
+const eachLinks = document
+  .querySelectorAll(".navlinks li a")
+  .forEach((link) => {
+    menuAndLinkToggle(link, navlinks);
+  });
+
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+copyright.innerText = `©${year}`;

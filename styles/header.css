@@ -1,4 +1,5 @@
 header {
+  background-color: #74c69d;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +48,11 @@ h1 {
   opacity: 0.4;
 }
 
-.menu {
+.copyright-year {
+  display: none;
+}
+
+.menu-toggle-icon {
   display: none;
 }
 
@@ -55,38 +60,63 @@ h1 {
   header {
     padding: 1rem 1.5rem;
     position: relative;
-  }
-  .menu {
-    display: block;
+    z-index: 1200;
   }
   .navlinks {
-    display: none;
-    width: 90%;
+    width: 70%;
     height: 100vh;
     flex-direction: column;
     background-color: #fff;
-    position: absolute;
-    top: 3.7rem;
+    position: fixed;
+    top: 0;
     right: 0;
     text-align: center;
     padding-block: 1rem;
     transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    transform: translateX(100%);
+    opacity: 0;
   }
-  .navlinks li {
-    padding-block-end: 3rem;
+  .navlinks::before {
+    content: "";
+    width: 100%;
+    border-bottom: 2px solid #74c69d;
+    position: absolute;
+    top: 4rem;
+  }
+  .navlinks li:first-of-type {
+    padding-block-start: 4rem;
+  }
+  .navlinks li:not(:first-of-type) {
+    padding-block-start: 2rem;
   }
   .navlinks li a {
     color: #74c69d;
+    font-size: 2rem;
   }
   .navlinks.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .menu-toggle-icon {
     display: block;
+    cursor: pointer;
+    z-index: 1001;
+    height: 20px;
+  }
+  .copyright-year {
+    display: block;
+    color: #74c69d;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 8rem;
+    left: calc(70vw - 60%);
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   header {
-    width: 1300px;
+    max-width: 1200px;
     margin: auto;
-    border-bottom: 0;
   }
 }

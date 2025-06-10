@@ -1,16 +1,13 @@
-main {
-  margin-inline: 4rem;
-  margin-block-start: 3rem;
-}
-
 .hero {
-  height: calc(100dvh - 6rem);
+  background-color: #74c69d;
+  height: calc(100vh - 6rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
   color: #fff;
   font-family: "Lato", sans-serif;
+  padding: 3rem 4rem;
 }
 
 .first-container h2 {
@@ -65,14 +62,21 @@ main {
   height: auto;
 }
 
+.partners-container {
+  background-color: #fff;
+}
+
 @media (max-width: 768px) {
-  main {
-    margin-inline: 1.5rem;
+  .hero,
+  .partners-container {
+    padding-inline: 1.5rem;
   }
   .hero {
+    height: unset;
     flex-direction: column;
-    justify-content: initial;
+    justify-content: unset;
     gap: 5rem;
+    padding-block: 5rem 10rem;
   }
   .first-container a {
     padding: 0.8rem 2rem;
@@ -87,11 +91,15 @@ main {
   .second-container img {
     width: 100%;
   }
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   main {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
   }
 }
