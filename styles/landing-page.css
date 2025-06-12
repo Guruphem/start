@@ -130,6 +130,11 @@
   opacity: 0.9;
 }
 
+.partners-container a:active,
+.learn-more-container a:active {
+  opacity: 0.7;
+}
+
 .learn-more-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -155,7 +160,8 @@
   margin-block: clamp(1rem, 4vw, 2rem);
 }
 
-.learn-more-container a {
+.learn-more-container a,
+.team-container a {
   display: inline-block;
   background-color: #0f0e0e;
   color: #fff;
@@ -170,6 +176,8 @@
 .team-container {
   font-family: "Lato", sans-serif;
   margin-inline: clamp(1.5rem, 4vw, 4rem);
+  display: flex;
+  flex-direction: column;
 }
 
 .team-cards {
@@ -205,6 +213,10 @@
 .card p {
   text-transform: uppercase;
   font-size: 1.2rem;
+}
+
+.team-container a {
+  align-self: center;
 }
 
 @media (max-width: 768px) {
