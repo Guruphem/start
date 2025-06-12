@@ -126,12 +126,14 @@
 }
 
 .partners-container a:hover,
-.learn-more-container a:hover {
+.learn-more-container a:hover,
+.team-container a:hover {
   opacity: 0.9;
 }
 
 .partners-container a:active,
-.learn-more-container a:active {
+.learn-more-container a:active,
+.team-container a:active {
   opacity: 0.7;
 }
 
