@@ -9,15 +9,15 @@ function menuAndLinkToggle(toggleElement, affectedElement) {
     if (!affectedElement.classList.contains("active")) {
       affectedElement.classList.add("active");
       menuBtn.src = "icons/close-svgrepo-new.svg";
+      bodyElementTag.classList.add("no-scroll");
     } else {
       affectedElement.classList.remove("active");
       menuBtn.src = "icons/menu (2).svg";
+      bodyElementTag.classList.remove("no-scroll");
     }
-    bodyElementTag.classList.toggle("no-scroll");
   });
 }
 menuAndLinkToggle(menuBtn, navlinks);
-menuAndLinkToggle(mainElementTag, navlinks);
 
 const eachLinks = document
   .querySelectorAll(".navlinks li a")

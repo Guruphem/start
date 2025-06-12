@@ -72,7 +72,7 @@ h1 {
     right: 0;
     text-align: center;
     padding-block: 1rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in;
     z-index: 1000;
     transform: translateX(100%);
     opacity: 0;
