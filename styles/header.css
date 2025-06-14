@@ -48,10 +48,6 @@ h1 {
   opacity: 0.4;
 }
 
-.copyright-year {
-  display: none;
-}
-
 .menu-toggle-icon {
   display: none;
 }
@@ -104,17 +100,9 @@ h1 {
     z-index: 1001;
     height: 20px;
   }
-  .copyright-year {
-    display: block;
-    color: #74c69d;
-    font-size: 2rem;
-    position: absolute;
-    bottom: 8rem;
-    left: calc(70vw - 60%);
-  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   header {
     max-width: 1200px;
     margin: auto;

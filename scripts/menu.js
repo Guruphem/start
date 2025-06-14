@@ -31,4 +31,6 @@ const eachLinks = document
 //JS date object used to get cuurent year for footer copyright year
 const currentDate = new Date();
 const year = currentDate.getFullYear();
-copyright.innerText = `©${year}`;
+copyright.innerText = `${year}`;
+console.log(copyright.innerText);
+console.log(copyright);
