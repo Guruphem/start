@@ -1,7 +1,5 @@
 footer {
     background-color: #74c69d;
-    padding-inline: clamp(1.5rem, 4vw, 10rem);
-    padding-block: 2rem;
 }
 
 .footer-flex {
@@ -9,6 +7,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-block: 2rem;
+    margin-inline: 10rem;
 }
 
 .footer-socials {
@@ -28,6 +28,12 @@ footer h4 {
     .footer-flex {
         justify-content: center;
         gap: 2rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-flex {
+        margin-inline: 1.5rem;
     }
 }
 

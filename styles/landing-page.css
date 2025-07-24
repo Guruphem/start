@@ -123,7 +123,7 @@
     align-items: center;
     font-family: "Lato", sans-serif;
     gap: 4rem 5rem;
-    margin-inline: clamp(1.5rem, 4vw, 10rem);
+    margin-inline: 10rem;
 }
 
 .learn-more-container .img-container img {
@@ -160,7 +160,7 @@
 
 .team-container {
     font-family: "Lato", sans-serif;
-    margin-inline: clamp(1.5rem, 4vw, 10rem);
+    margin-inline: 10rem;
     display: flex;
     flex-direction: column;
 }
@@ -239,12 +239,16 @@
     }
     .learn-more-container {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-inline: 1.5rem;
     }
     .learn-more-container div:nth-of-type(3) {
         order: 4;
     }
     .learn-more-container div:nth-of-type(4) {
         order: 3;
+    }
+    .team-container {
+        margin-inline: 1.5rem;
     }
     .team-cards {
         justify-content: center;
