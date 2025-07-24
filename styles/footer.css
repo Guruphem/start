@@ -31,9 +31,9 @@ footer h4 {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 569px) and (max-width: 1024px) {
     .footer-flex {
-        margin-inline: 1.5rem;
+        margin-inline: 3rem;
     }
 }
 
