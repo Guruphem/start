@@ -111,7 +111,7 @@ h1 {
     }
 }
 
-@media (min-width: 569px) and (max-width: 1024px) {
+@media (min-width: 569px) and (max-width: 1150px) {
     header {
         padding-inline: 3rem;
     }
