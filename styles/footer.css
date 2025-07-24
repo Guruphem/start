@@ -27,7 +27,8 @@ footer h4 {
 @media (max-width: 568px) {
     .footer-flex {
         justify-content: center;
-        gap: 2rem 0;
+        gap: 2rem;
+        margin-inline: 1.5rem;
     }
 }
 

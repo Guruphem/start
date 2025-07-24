@@ -1,0 +1,86 @@
+.portfolio-wrapper {
+    margin-block: 2rem 5rem;
+    position: relative;
+}
+
+.portfolio-container {
+    font-family: "Lato", sans-serif;
+    margin-inline: 10rem;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-block: clamp(2rem, 4vw, 4rem);
+}
+
+.portfolio-grid img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.portfolio-grid img:first-of-type {
+    border: 0.1rem solid #000;
+    border-radius: 5px;
+}
+
+.portfolio-grid img:hover {
+    transform: scale(1.01);
+}
+
+.learn-more-btn {
+    display: inline-block;
+    background-color: #0f0e0e;
+    color: #fff;
+    font-size: clamp(1.8rem, 4vw, 2rem);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.learn-more-btn:hover {
+    opacity: 0.9;
+}
+
+.learn-more-btn:active {
+    opacity: 0.7;
+}
+
+@media (max-width: 568px) {
+    .portfolio-wrapper {
+        margin-block: 2rem;
+    }
+    .portfolio-container {
+        margin-inline: 1.5rem;
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 569px) and (max-width: 1024px) {
+    .portfolio-container {
+        margin-inline: 3rem;
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(500px, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .portfolio-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
