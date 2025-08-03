@@ -2,6 +2,7 @@
 const menuBtn = document.querySelector(".menu-toggle-icon");
 const navlinks = document.querySelector(".navlinks");
 const copyright = document.querySelector(".copyright-year");
+const wrapper = document.querySelector("nav");
 
 //An event listener for a click event on the menu btn element to trigger navlinks active and inactive state on mobile and tablet devices
 function menuToggle(eventElement, affectedElement) {
@@ -9,19 +10,31 @@ function menuToggle(eventElement, affectedElement) {
     affectedElement.classList.toggle("active");
     if (affectedElement.classList.contains("active")) {
       eventElement.src = "icons/close.png";
+      document.body.classList.add("no-scroll");
     } else {
       eventElement.src = "icons/menu (2).svg";
+      document.body.classList.remove("no-scroll");
     }
   });
 }
 menuToggle(menuBtn, navlinks);
 
-//An iterated event listener that toggles in-ativity of the menu panel when active on mobile and tab devices
 const eachLinks = document
   .querySelectorAll(".navlinks li a")
   .forEach((link) => {
     menuToggle(link, navlinks);
+    preventPageReload(link, navlinks);
   });
+
+//A function that prevents the browser auto reload when a navlink of the current page is clicked
+function preventPageReload(link) {
+  link.addEventListener("click", (event) => {
+    if (link.href === window.location.href) {
+      event.preventDefault();
+      menuBtn.src = "icons/menu (2).svg";
+    }
+  });
+}
 
 //JS date object used to get cuurent year for footer copyright year
 const currentDate = new Date();
