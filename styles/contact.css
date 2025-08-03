@@ -1,0 +1,121 @@
+.contact {
+  margin-block-end: 10rem;
+}
+
+.tag-word-container > h3 {
+  color: #000 !important;
+}
+
+.tag-word-container {
+  margin-block-end: 5rem;
+}
+
+.contact-flex {
+  max-width: 1200px;
+  display: flex;
+  gap: 4rem;
+  margin-inline: 10rem;
+}
+
+form {
+  font-family: "Lato", sans-serif;
+  flex: 1;
+}
+
+label,
+input,
+textarea {
+  font-size: 1.6rem;
+  display: block;
+  width: 100%;
+}
+
+label {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+label:not(:first-of-type) {
+  margin-block-start: 1.5rem;
+}
+
+input,
+textarea {
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin-block-start: 1rem;
+  padding-block: 1rem;
+  padding-inline-start: 0.5rem;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #0f0e0e;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  padding-inline-start: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+input[type="submit"]:active {
+  opacity: 0.7;
+}
+
+.contact-flex div {
+  flex: 1;
+}
+
+.contact-flex div img {
+  height: 314px;
+  width: 100%;
+}
+
+@media (max-width: 568px) {
+  .contact {
+    margin-block-end: 5rem;
+  }
+  .tag-word-container {
+    margin-block-end: 1.5rem;
+  }
+  .contact-flex div img {
+    height: auto;
+    width: 100%;
+  }
+  .contact-flex {
+    gap: 2rem;
+    margin-inline: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin-block-end: 7rem;
+  }
+  .tag-word-container {
+    margin-block-end: 2rem;
+  }
+  .contact-flex {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  input[type="submit"] {
+    margin-block-start: 2em;
+  }
+}
+
+@media (min-width: 569px) and (max-width: 1150px) {
+  .contact-flex {
+    margin-inline: 3rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact-flex {
+    margin: 0 auto;
+  }
+}
