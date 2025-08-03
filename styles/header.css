@@ -1,125 +1,129 @@
 header {
-    background-color: #74c69d;
-    padding: 2rem 10rem;
+  background-color: #74c69d;
+  padding: 2rem 10rem;
 }
 
 .header-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .brand {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
 }
 
 .brand img {
-    height: 25px;
+  height: 25px;
 }
 
 h1 {
-    color: #fff;
-    font-family: "Work Sans", sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .navlinks {
-    color: #fff;
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
+  color: #fff;
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
 }
 
 .navlinks li a {
-    color: #fff;
-    text-decoration: none;
-    font-family: "Lato", sans-serif;
-    font-weight: 500;
-    font-size: 1.6rem;
-    transition: opacity 0.3s ease-in-out;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .navlinks li a:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .navlinks li a:active {
-    opacity: 0.4;
+  opacity: 0.4;
 }
 
 .menu-toggle-icon {
-    display: none;
+  height: 100px;
+  width: 40px;
+  object-fit: contain;
+  object-position: center;
+  display: none;
 }
 
 @media (max-width: 768px) {
-    header {
-        position: relative;
-        padding-block: 1rem;
-        z-index: 100;
-    }
-    .navlinks {
-        width: 70%;
-        height: 100vh;
-        flex-direction: column;
-        background-color: #fff;
-        position: fixed;
-        top: 0;
-        right: 0;
-        text-align: center;
-        padding-block: 1rem;
-        transition: all 0.3s ease-in;
-        z-index: 99;
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    .navlinks::before {
-        content: "";
-        width: 100%;
-        border-bottom: 2px solid #74c69d;
-        position: absolute;
-        top: 4.3rem;
-    }
-    .navlinks li:first-of-type {
-        padding-block-start: 4rem;
-    }
-    .navlinks li:not(:first-of-type) {
-        padding-block-start: 2rem;
-    }
-    .navlinks li a {
-        color: #74c69d;
-        font-size: 2rem;
-    }
-    .navlinks.active {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    .menu-toggle-icon {
-        display: block;
-        cursor: pointer;
-        z-index: 100;
-        height: 20px;
-    }
+  header {
+    position: relative;
+    padding-block: 1rem;
+    z-index: 100;
+  }
+  .navlinks {
+    width: 70%;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding-block: 1rem;
+    transition: all 0.3s ease-in;
+    z-index: 99;
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  .navlinks::before {
+    content: "";
+    width: 100%;
+    border-bottom: 2px solid #74c69d;
+    position: absolute;
+    top: 4.3rem;
+  }
+  .navlinks li:first-of-type {
+    padding-block-start: 4rem;
+  }
+  .navlinks li:not(:first-of-type) {
+    padding-block-start: 2rem;
+  }
+  .navlinks li a {
+    color: #74c69d;
+    font-size: 2rem;
+  }
+  .navlinks.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .menu-toggle-icon {
+    display: block;
+    cursor: pointer;
+    z-index: 100;
+    height: 20px;
+  }
 }
 
 @media (max-width: 568px) {
-    header {
-        padding-inline: 1.5rem;
-    }
+  header {
+    padding-inline: 1.5rem;
+  }
 }
 
 @media (min-width: 569px) and (max-width: 1150px) {
-    header {
-        padding-inline: 3rem;
-    }
+  header {
+    padding-inline: 3rem;
+  }
 }
 
 @media (min-width: 1400px) {
-    .header-flex {
-        max-width: 1200px;
-        margin: auto;
-    }
+  .header-flex {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
