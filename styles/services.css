@@ -84,6 +84,14 @@
   transition: opacity 0.3s ease-in-out;
 }
 
+.plan-card a:hover {
+  opacity: 0.9;
+}
+
+.plan-card a:active {
+  opacity: 0.7;
+}
+
 @media (max-width: 368px) {
   .services-flex {
     margin-inline: 1.5rem;
