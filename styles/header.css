@@ -76,11 +76,7 @@ h1 {
     text-align: center;
     padding-block: 1rem;
     transition: all 0.3s ease-in;
-<<<<<<< HEAD
     z-index: 99;
-=======
-    z-index: 1000;
->>>>>>> 8d715ae (replaced icon and fixed mobile menu errrors)
     transform: translateX(100%);
     opacity: 0;
   }
