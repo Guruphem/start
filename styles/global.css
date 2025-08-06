@@ -41,6 +41,13 @@ html {
 }
 
 @media (max-width: 468px) {
+    .tag-word-container .first {
+        letter-spacing: 0.3rem;
+    }
+    .tag-word-container h3:nth-of-type(2),
+    .contact-us {
+        font-size: 2rem;
+    }
     .tag-word-container p {
         line-height: 2.8rem;
     }
