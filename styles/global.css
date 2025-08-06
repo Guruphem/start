@@ -1,42 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 .tag-word-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.tag-word-container h3:first-of-type {
-  color: #74c69d;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  font-weight: 700;
+.tag-word-container .first {
+    color: #74c69d;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
 }
 
-.tag-word-container h3:last-of-type {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 2.5rem;
-  margin-block: clamp(1rem, 4vw, 2rem);
-  text-transform: capitalize;
+.tag-word-container h3:nth-of-type(2),
+.contact-us {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.5rem;
+    margin-block: clamp(1rem, 4vw, 2rem);
+    text-transform: capitalize;
 }
 
 .tag-word-container p {
-  font-size: clamp(1.8rem, 4vw, 2rem);
-  max-width: 350px;
-  text-align: center;
-}
-
-.no-scroll {
-  overflow-y: hidden;
+    font-size: clamp(1.8rem, 4vw, 2rem);
+    max-width: 350px;
+    text-align: center;
 }

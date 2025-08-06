@@ -145,6 +145,10 @@ h1 {
     }
 }
 
+.no-scroll {
+    overflow-y: hidden;
+}
+
 @media (max-width: 568px) {
     header {
         padding-inline: 1.5rem;

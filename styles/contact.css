@@ -2,9 +2,13 @@
     margin-block-end: 10rem;
 }
 
-.tag-word-container>h3 {
-    color: #000 !important;
-}
+
+/* . {
+    font-family: "Times New Roman", Times, serif t;
+    font-size: 2.5rem;
+    margin-block: clamp(1rem, 4vw, 2rem);
+    color: #000;
+} */
 
 .tag-word-container {
     margin-block-end: 5rem;
@@ -80,6 +84,14 @@ input[type="submit"]:active {
     width: 100%;
 }
 
+@media (max-width: 468px) {
+    form,
+    .map {
+        width: unset !important;
+        align-self: unset !important;
+    }
+}
+
 @media (max-width: 568px) {
     .contact {
         margin-block-end: 5rem;
@@ -108,9 +120,10 @@ input[type="submit"]:active {
         flex-direction: column-reverse;
         gap: 3rem;
     }
-    form {
-        /* width: 400px; */
-        flex: 400px;
+    form,
+    .map {
+        width: 400px;
+        align-self: center;
     }
     input[type="submit"] {
         margin-block-start: 2em;
