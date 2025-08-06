@@ -17,6 +17,7 @@ html {
 }
 
 .tag-word-container .first {
+    font-family: "Lato", sans-serif;
     color: #74c69d;
     font-size: 2rem;
     text-transform: uppercase;
@@ -33,7 +34,14 @@ html {
 }
 
 .tag-word-container p {
+    font-family: "Lato", sans-serif;
     font-size: clamp(1.8rem, 4vw, 2rem);
     max-width: 350px;
     text-align: center;
+}
+
+@media (max-width: 468px) {
+    .tag-word-container p {
+        line-height: 2.8rem;
+    }
 }

@@ -1,149 +1,149 @@
 .services {
-  margin-block: 3rem 8rem;
+    margin-block: 3rem 8rem;
 }
 
 .services-flex {
-  max-width: 1200px;
-  font-family: "Lato", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 4rem;
-  margin-inline: 10rem;
+    max-width: 1200px;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-inline: 10rem;
 }
 
 .tag-word-container p {
-  margin-block-end: 5rem;
+    margin-block-end: 5rem;
 }
 
 .plan-card {
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  padding: 3rem 2rem;
-  max-width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 3rem 2rem;
+    max-width: 300px;
 }
 
 .plan-card h3 {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 .pricing {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.4rem;
-  margin-block: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    margin-block: 0.8rem;
 }
 
 .pricing h4 {
-  font-size: 3rem;
-  font-weight: bold;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .pricing span {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
-.plan-card > p {
-  font-size: 1.6rem;
-  color: #3f3d3d;
+.plan-card>p {
+    font-size: 1.6rem;
+    color: #3f3d3d;
 }
 
 .details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-block: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-block: 4rem;
 }
 
 .detail {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .mark img {
-  width: 23px;
+    width: 23px;
 }
 
 .detail p {
-  font-size: 1.5rem;
-  font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .plan-card a {
-  display: inline-block;
-  background-color: #0f0e0e;
-  color: #fff;
-  font-size: clamp(1.8rem, 4vw, 2rem);
-  text-decoration: none;
-  text-transform: capitalize;
-  padding: 0.7rem 1rem;
-  border-radius: 0.5rem;
-  transition: opacity 0.3s ease-in-out;
+    display: inline-block;
+    background-color: #0f0e0e;
+    color: #fff;
+    font-size: clamp(1.8rem, 4vw, 2rem);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .plan-card a:hover {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
 .plan-card a:active {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 @media (max-width: 368px) {
-  .services-flex {
-    margin-inline: 1.5rem;
-  }
-  .plan-card {
-    flex-grow: 1;
-  }
+    .services-flex {
+        margin-inline: 1.5rem;
+    }
+    .plan-card {
+        flex-grow: 1;
+    }
 }
 
 @media (min-width: 369px) and (max-width: 698px) {
-  .services-flex {
-    margin-inline: 1.5rem;
-  }
+    .services-flex {
+        margin-inline: 1.5rem;
+    }
 }
 
 @media (min-width: 569px) and (max-width: 1178px) {
-  .services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .services-flex {
-    margin-inline: 3rem;
-    justify-content: unset;
-  }
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-flex {
+        margin-inline: 3rem;
+        justify-content: unset;
+    }
 }
 
 @media (max-width: 709px) {
-  .services-flex {
-    gap: 4rem;
-    flex-direction: column;
-  }
+    .services-flex {
+        gap: 4rem;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 768px) {
-  .tag-word-container p {
-    margin-block-end: 3rem;
-  }
+    .tag-word-container p {
+        margin-block-end: 3rem;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 1039px) {
-  .services-flex {
-    justify-content: space-between;
-    gap: 5rem;
-  }
-  .plan-card:last-of-type {
-    margin: 0 auto;
-  }
+    .services-flex {
+        justify-content: space-between;
+        gap: 5rem;
+    }
+    .plan-card:last-of-type {
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 1400px) {
-  .services-flex {
-    margin: 0 auto;
-  }
+    .services-flex {
+        margin: 0 auto;
+    }
 }

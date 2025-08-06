@@ -2,14 +2,6 @@
     margin-block-end: 10rem;
 }
 
-
-/* . {
-    font-family: "Times New Roman", Times, serif t;
-    font-size: 2.5rem;
-    margin-block: clamp(1rem, 4vw, 2rem);
-    color: #000;
-} */
-
 .tag-word-container {
     margin-block-end: 5rem;
 }
@@ -61,6 +53,7 @@ textarea:focus {
 input[type="submit"] {
     background-color: #0f0e0e;
     color: #fff;
+    font-size: 2rem;
     border: 0;
     cursor: pointer;
     padding-inline-start: 0;
