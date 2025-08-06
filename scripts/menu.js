@@ -2,7 +2,7 @@
 const menuBtn = document.querySelector(".menu-toggle-icon");
 const navlinks = document.querySelector(".navlinks");
 const copyright = document.querySelector(".copyright-year");
-const wrapper = document.querySelector("nav");
+const header = document.querySelector(".header-flex");
 
 //An event listener for a click event on the menu btn element to trigger navlinks active and inactive state on mobile and tablet devices
 function menuToggle(eventElement, affectedElement) {
@@ -10,10 +10,10 @@ function menuToggle(eventElement, affectedElement) {
         affectedElement.classList.toggle("active");
         if (affectedElement.classList.contains("active")) {
             eventElement.classList.add("open");
-            document.body.classList.add("no-scroll");
+            // wrapper.classList.add("no-scroll");
         } else {
             eventElement.classList.remove("open");
-            document.body.classList.remove("no-scroll");
+            wrapper.classList.remove("no-scroll");
         }
     });
 }
@@ -25,6 +25,29 @@ const eachLinks = document
         menuToggle(link, navlinks);
         preventPageReload(link, navlinks);
     });
+
+// if (navlinks.classList.contains("active")) {
+//     window.addEventListener("scroll", () => {
+//         menuBtn.classList.toggle("is-scrolling");
+//     });
+// }
+
+function fixedOnScroll(style) {
+    window.addEventListener("scroll", () => {
+        if (menuBtn.classList.contains("open")) {
+            header.classList.add(`${style}`);
+        } else {
+            header.classList.remove(`${style}`);
+        }
+    });
+}
+
+fixedOnScroll("is-scrolling");
+
+if (window.innerWidth >= 569 px " && window.innerWidth === "
+    768 px ") {
+    fixedOnScroll("is-scrolling-tab");
+}
 
 //A function that prevents the browser auto reload when a navlink of the current page is clicked
 function preventPageReload(link) {
