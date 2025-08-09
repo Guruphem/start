@@ -50,10 +50,3 @@ function preventPageReload(link) {
         }
     });
 }
-
-//JS date object used to get cuurent year for footer copyright year
-const currentDate = new Date();
-const year = currentDate.getFullYear();
-copyright.innerText = `${year}`;
-
-let fruits = ["apple", "mango", "food", "beans"];
