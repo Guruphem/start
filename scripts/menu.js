@@ -26,12 +26,6 @@ const eachLinks = document
         preventPageReload(link, navlinks);
     });
 
-// if (navlinks.classList.contains("active")) {
-//     window.addEventListener("scroll", () => {
-//         menuBtn.classList.toggle("is-scrolling");
-//     });
-// }
-
 function fixedOnScroll(style) {
     window.addEventListener("scroll", () => {
         if (menuBtn.classList.contains("open")) {
@@ -44,11 +38,9 @@ function fixedOnScroll(style) {
 
 fixedOnScroll("is-scrolling");
 
-if (window.innerWidth >= 569 px " && window.innerWidth === "
-    768 px ") {
+if (window.innerWidth === 569 && window.innerWidth <= 768) {
     fixedOnScroll("is-scrolling-tab");
 }
-
 //A function that prevents the browser auto reload when a navlink of the current page is clicked
 function preventPageReload(link) {
     link.addEventListener("click", (event) => {
@@ -63,3 +55,5 @@ function preventPageReload(link) {
 const currentDate = new Date();
 const year = currentDate.getFullYear();
 copyright.innerText = `${year}`;
+
+let fruits = ["apple", "mango", "food", "beans"];
