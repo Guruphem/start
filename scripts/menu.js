@@ -50,3 +50,8 @@ function preventPageReload(link) {
         }
     });
 }
+
+//JS date object used to get current year for footer copyright year
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+copyright.innerText = `${year}`;
